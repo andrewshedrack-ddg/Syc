@@ -1,3 +1,0 @@
-# Syc
-Project web development 
-
