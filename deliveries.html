@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Record a delivery - Ereteti Dairy Sacco</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<header>
+<h1>Ereteti Dairy Sacco</h1>
+<p>Milk collected twice a day, on three routes out of Ngong.</p>
+</header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="routes.html">Our routes</a></li>
+<li><a href="deliveries.html">Deliveries</a></li>
+<li><a href="members.html">Members</a></li>
+<li><a href="milk.html">Milk</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<main>
+<h2>Record a delivery</h2>
+<p>Use this form to record a delivery of milk at a collection centre. Fill in the member number, the litres delivered, the route and the date.</p>
+
+<form id="deliveryForm">
+<label for="memberNumber">Member number</label>
+<input type="text" id="memberNumber" placeholder="e.g. ER-0042">
+
+<label for="litres">Litres delivered</label>
+<input type="number" id="litres" placeholder="e.g. 12">
+
+<label for="route">Route</label>
+<select id="route">
+<option value="Kiserian">Kiserian</option>
+<option value="Ngong">Ngong</option>
+<option value="Rongai">Rongai</option>
+</select>
+
+<label for="deliveryDate">Date</label>
+<input type="date" id="deliveryDate">
+
+<button type="submit">Record delivery</button>
+</form>
+
+<p id="formError"></p>
+
+<h2>Recent deliveries</h2>
+<table id="deliveriesTable">
+<thead>
+<tr>
+<th>Member</th>
+<th>Route</th>
+<th>Date</th>
+<th>Litres</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ER-0042</td>
+<td>Kiserian</td>
+<td>2026-11-10</td>
+<td>18</td>
+</tr>
+<tr>
+<td>ER-0103</td>
+<td>Ngong</td>
+<td>2026-11-10</td>
+<td>25</td>
+</tr>
+<tr>
+<td>ER-0077</td>
+<td>Rongai</td>
+<td>2026-11-10</td>
+<td>9</td>
+</tr>
+<tr>
+<td>ER-0042</td>
+<td>Kiserian</td>
+<td>2026-11-10</td>
+<td>22</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="3">Total litres</td>
+<td id="litresTotal">74</td>
+</tr>
+</tfoot>
+</table>
+</main>
+<footer>
+<p>Ereteti Dairy Sacco, PO Box 4021, Ngong.</p>
+<p>Site built by Andrew Shedrack Anderson, DBT Year 1, 2026.</p>
+</footer>
+</body>
+</html>

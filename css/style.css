@@ -1,0 +1,201 @@
+/* Ereteti Dairy Sacco - stylesheet
+   One simple stylesheet for the whole site.
+   Dark green header, plain readable body, centred content column. */
+
+/* Page basics */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222222;
+    background: #ffffff;
+}
+
+/* Header */
+header {
+    background: #1B5E20;
+    color: #ffffff;
+    padding: 24px 16px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 4px 0;
+    font-size: 30px;
+}
+
+header p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Navigation */
+nav {
+    background: #2E7D32;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 16px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    background: #1B5E20;
+    text-decoration: underline;
+}
+
+/* Main content column */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 16px 40px 16px;
+}
+
+h2 {
+    color: #1B5E20;
+    font-size: 22px;
+    margin-top: 28px;
+}
+
+h3 {
+    color: #1B5E20;
+    font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 16px 0;
+}
+
+blockquote {
+    border-left: 4px solid #2E7D32;
+    margin: 20px 0;
+    padding: 8px 16px;
+    background: #f5f5f5;
+}
+
+blockquote p {
+    margin: 0 0 6px 0;
+}
+
+blockquote footer {
+    background: none;
+    color: #555555;
+    padding: 0;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Forms */
+form {
+    max-width: 520px;
+}
+
+label {
+    display: block;
+    margin: 14px 0 4px 0;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="search"],
+select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+}
+
+input[type="search"] {
+    max-width: 520px;
+    margin: 8px 0 16px 0;
+}
+
+button,
+input[type="submit"] {
+    background: #1B5E20;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: #2E7D32;
+}
+
+/* Error and success messages */
+.error {
+    color: #c62828;
+    font-weight: bold;
+}
+
+.success {
+    color: #1B5E20;
+    font-weight: bold;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+}
+
+th,
+td {
+    border: 1px solid #bbbbbb;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #e8f5e9;
+    color: #1B5E20;
+}
+
+tfoot td {
+    font-weight: bold;
+    background: #f5f5f5;
+}
+
+/* Footer */
+footer {
+    background: #1B5E20;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 16px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 4px 0;
+}
